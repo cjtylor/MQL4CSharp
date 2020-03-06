@@ -19,6 +19,7 @@ using RGiesecke.DllExport;
 using System.Runtime.InteropServices;
 using Amib.Threading;
 using log4net;
+using mql4csharp;
 using mqlsharp.Util;
 
 namespace MQL4CSharp.Base.MQL
@@ -184,6 +185,7 @@ namespace MQL4CSharp.Base.MQL
             }
 
         }
+
 
         [DllExport("IsExecutingOnTick", CallingConvention = CallingConvention.StdCall)]
         public static bool IsExecutingOnTick(Int64 ix)
